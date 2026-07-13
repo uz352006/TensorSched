@@ -14,7 +14,7 @@ Simulates jobs competing for CPU time under a real scheduling policy instead of 
 - preemption, so a higher-priority job can interrupt one that's already running
 - a semaphore that caps how many jobs can actually run at once (default 4), so it behaves like a fixed number of cores instead of unlimited parallelism
 
-All of this is rendered in real time with SDL2 — Gantt chart, per-level queue bars, CPU/memory sparklines, a job table, and an event log — so you can actually watch the scheduling decisions happen instead of reading through a trace file afterward.
+All of this is rendered in real time with SDL2  Gantt chart, per-level queue bars, CPU/memory sparklines, a job table, and an event log — so you can actually watch the scheduling decisions happen instead of reading through a trace file afterward.
 
 ## Why MLFQ
 
