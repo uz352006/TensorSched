@@ -68,7 +68,7 @@ make
 
 Requires SDL2 and SDL2_ttf dev packages installed (`sdl2-config` needs to be on your path). The Makefile links `-lpthread` and whatever `sdl2-config --libs` returns.
 
-On Windows, the pthread/semaphore shims are used instead of the real POSIX headers — same source, no `#ifdef`s scattered through the scheduler itself.
+On Windows, the pthread/semaphore shims are used instead of the real POSIX headers  same source, no `#ifdef`s scattered through the scheduler itself.
 
 ## Some code, if you're curious
 
@@ -109,7 +109,3 @@ bool acquire(int cpu, int mem) {
 - `AGING_THRESHOLD` and the per-level quanta are hardcoded, not tuned automatically based on observed wait times.
 - No CSV/export of Gantt or stats data for offline analysis.
 
-
-## Reference
-
-Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating System Concepts* (10th ed.). Wiley.
